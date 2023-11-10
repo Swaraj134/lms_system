@@ -1,0 +1,119 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-size: 100;
+   font-family: sans-serif;
+}
+
+/* .wrap {
+   width: 100%;
+   float: left;
+} */
+
+.main {
+   height: 100vh;
+   background: linear-gradient(to right, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.image{
+   /* width: 300px; */
+   height:300px;
+   flex: 1;
+   display:block;
+   margin-bottom: 4git rem;
+}
+.main-bg{
+   align-items: center;
+   justify-content: center;
+   padding: 10rem 5rem;
+   flex: 1;
+   gap:1rem;
+   display: flex;
+   flex-direction: column;
+   /* background-image: url("/image/bg.svg");
+   background-size: 50% 50%;
+   background-position: right;
+   background-repeat: no-repeat; */
+}
+
+.main h1 {
+   position: relative;
+   color:#fff;
+   font-size: 40px;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 900;
+}
+
+
+.main p{
+   font-family: 'Roboto Slab', serif;
+   /* flex-grow: 1; */
+}
+@media screen and (max-width: 480px){
+   .main{
+      flex-direction:column;
+      justify-content: flex-start;
+
+   }
+   .image{
+      width: 300px;
+      height: 300px;
+   }
+}
+/* css dashboard sildebar code */
+.slidebar {
+   position: absolute;
+   width: 360px;
+   height: 100vh;
+   top: 0;
+   left: -360px;
+   padding: 40px;
+   transition: left .5s ease;
+   background-color: #2a2a2a;
+   z-index: 999;
+}
+
+.slidebar.visible {
+   left: 0;
+   transition: left .6s ease;
+}
+
+.slidebar h1 {
+   color: #fff;
+   font-size: 40px;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+
+.slidebar ul {
+   display: block;
+   margin-top: 50px;
+}
+
+.slidebar ul li {
+   padding: 10px 0;
+   list-style: none;
+   border-bottom: 1px solid #707070;
+   margin-bottom: 10px;
+}
+
+.slidebar ul li a {
+   color: #fff;
+   font-size: 26px;
+   text-decoration: none;
+}
+
+#menuicon {
+   position: absolute;
+   right: -50px;
+   top: 0;
+   height: 50px;
+   width: 50px;
+   cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>SBL-Lab | Dashboard</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/dekstop.css">
+   
+</head>
+<body>
+   <div class="wrap">
+      <div class="slidebar">
+         <img src="/image/menu.png" alt="" id="menuicon">
+         <h1>Dashboard</h1>
+         <ul>
+            <li>
+               <a href="https://drive.google.com/drive/folders/1-54zbUSwcgRWL-X0VsJfanhjozmoubvT">FE</a>
+            </li>
+            <li>
+               <a href="https://drive.google.com/drive/folders/1-BEFbmsCLo_qvGA-r336v94PTLPYWA8J">SE</a>
+            </li>
+            <li>
+               <a href="https://drive.google.com/drive/folders/1-EqL_M2KvU7A-2EFwUxgYBk39BZvTKQR">TE</a>
+            </li>
+            <li>
+               <a href="https://drive.google.com/drive/folders/1-Ggv_QrkLyHklWHJZ90hfGvQsrtqjX9Z">BE</a>
+            </li>
+            <li>
+               <a href="/">logout</a>
+            </li>
+         </ul>
+      </div>
+      <section class="main">
+         <div class="main-bg">
+            <h1>About Us</h1>
+            <p>
+               Our Mission
+               How many times have you xeroxed , taken print out notes of toppers from your college or school? A student always try to optimize his learning experience. We approach toppers or teachers the day before exam to clarify our doubts, we borrow their notes for quick revision. This was our driving force to bring NotesnBooks to our student community. We have compiled the best notes for all the government exams. We went to extra length by analyzing class notes of over 20-30 toppers and selecting only those which fits our criteria. Our motivation is to provide the best study material to every corner of India.
+            </p>
+         </div>
+         <img src="/image/bg.svg" class="image" alt="">
+      </section>
+   </div>
+   
+   <script src="/js/jquery.js"></script>
+   <script>
+      $(document).ready(function() {
+         $("#menuicon").on("click", function() {
+            $(".slidebar").toggleClass("visible");
+         });
+      });
+   </script>
+</body>
+</html>
